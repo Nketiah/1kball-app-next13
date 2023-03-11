@@ -1,91 +1,54 @@
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import styles from '@/app/home.module.css'
+import Image from 'next/image'
+import { IoIosArrowForward } from "react-icons/io"
+import { VscWorkspaceTrusted } from "react-icons/vsc"
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
+    <>
+      <div>
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          src={"/images/home_bg.png"}
+          alt="home"
+          height={400}
+          width={200}
+          style={{ width: '100%' }}
+          className={styles.bgImage}
         />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
+
+        <Image
+          src={"/images/poolBallN.png"}
+          alt="poolball"
+          sizes='100vw'
+          width={200}
+          height={492}
+          className={styles.mainImage}
+        />
+      </div>
+      <section className={styles.homeSection}>
+        <div className={styles.sectionContent}>
+        <h1 style={{color:"white", fontSize: 26}}>Integrate your Mobile or Web Application
+            with our 1KBALL API
+          </h1>
+          <div>
+            <button className={styles.homeButton}>Get Started</button>
+             <div style={{display:"flex", alignItems:"center", justifyContent:"center"}}>
+               <IoIosArrowForward size={25}/>
+               <p style={{fontSize: 20}}>View Docs</p>
+             </div>
+          </div>
+
+          <div style={{marginTop: 60, marginBottom: 70, display:"flex", alignItems:"center", justifyContent:"center"}}>
+            <h5 style={{margin: 5}}>Trusted and Secured</h5>
+            <VscWorkspaceTrusted/>
+          </div>
         </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </section>
+     
+    </>
   )
 }

@@ -1,0 +1,128 @@
+.main{
+    margin-top: -4px;
+    text-align: center;
+    background-color: #0B1A3D;
+    border-top: 2px solid#afafaf
+}
+.buttons {
+    border-radius: 25px;
+    background-color: #3e4d6e;
+    color: white;
+    padding: 5px 30px;
+    cursor: pointer;
+}
+.resultSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    padding-bottom: 5rem;
+}
+.gameNames {
+    color: white;
+    height: 300px;
+    width: 220px;
+    border-radius: 10px;
+    border: 2px solid#576685;
+}
+.gameNames > ul {
+    text-decoration: none;
+    list-style: none;
+    display: block;
+    align-items: flex-start;
+    text-align: left;
+    padding: 1rem;
+}
+.gameDraws {
+    color: white;
+    border-radius: 10px;
+    border: 2px solid#576685;
+    /* padding-bottom: 10px; */
+}
+
+.tableRow {
+    background-color: #3e4d6e;
+}
+
+.tableRow > td {
+    padding: 7px;
+    border-radius: 2px;
+}
+.drawNumbers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.drawNum{
+    background-color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: black;
+    margin: 2px;
+}
+.gameNamesHeader{
+    border-bottom: 2px solid#576685;
+    margin-bottom: 8px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+.searchIcon{
+    padding: 5px;
+}
+.tableHeader{
+    border-top: 2px solid#576685;
+    padding: 0 1rem;
+    width: 100%;
+    padding-bottom: 2rem;
+    /* margin-bottom: 8px;
+    padding-bottom: 1rem;
+    padding-top: 1rem; */
+}
+.drawsTableHeader {
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+}
+.drawsTableHeader > div {
+    font-size: 14px;
+}
+.datesWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.activeDate {
+    background-color: rgb(219, 218, 218);
+    color: rgb(73, 73, 73);
+    padding: 0.8rem 1rem ;
+    border-radius: 8px;
+}
+.activeGame{
+    background-color: rgb(219, 218, 218);
+    border-radius: 25px;
+    color: black;
+    padding: 5px 30px;
+    cursor: pointer;
+}
+.pagination {
+    padding-bottom: 2rem;
+}
+
+.footer {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
